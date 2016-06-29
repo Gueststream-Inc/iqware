@@ -1,0 +1,41 @@
+{
+  "name": "gueststream/iqware",
+  "type": "library",
+  "description": "IQWare SOAP API Wrapper",
+  "keywords": [
+    "Gueststream",
+    "IQWare"
+  ],
+  "homepage": "https://github.com/gueststream/iqware",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Houghtelin",
+      "email": "josh@gueststream.com",
+      "homepage": "http://www.burnmytime.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "~5.5|~7.0",
+    "wsdl2phpgenerator/wsdl2phpgenerator": "^3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0||~5.0",
+    "scrutinizer/ocular": "~1.1",
+    "squizlabs/php_codesniffer": "~2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gueststream\\PMS\\IQWare\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gueststream\\PMS\\IQWare\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
