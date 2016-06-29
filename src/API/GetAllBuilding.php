@@ -19,10 +19,10 @@ class GetAllBuilding
      * @param int $intGUID
      * @param string $strISOLanguageCode
      */
-    public function __construct($intGUID, $strISOLanguageCode = "EN")
+    public function __construct($intGUID, $strISOLanguageCode = "en")
     {
-        $this->intGUID = $intGUID;
-        $this->strISOLanguageCode = $strISOLanguageCode;
+        $this->setIntGUID($intGUID);
+        $this->setStrISOLanguageCode($strISOLanguageCode);
     }
 
     /**
@@ -40,6 +40,7 @@ class GetAllBuilding
     public function setIntGUID($intGUID)
     {
         $this->intGUID = (int) $intGUID;
+
         return $this;
     }
 
@@ -53,11 +54,16 @@ class GetAllBuilding
 
     /**
      * @param string $strISOLanguageCode
+     * @throws \Exception
      * @return \Gueststream\PMS\IQWare\API\GetAllBuilding
      */
     public function setStrISOLanguageCode($strISOLanguageCode)
     {
-        $this->strISOLanguageCode = $strISOLanguageCode;
+	    if(strlen($strISOLanguageCode) !== 2) {
+		    throw new \Exception('Not a valid ISO 639-1 2 letter language code.');
+	    }
+
+        $this->strISOLanguageCode = strtolower($strISOLanguageCode);
         return $this;
     }
 }
