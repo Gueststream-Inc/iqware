@@ -54,7 +54,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-travis]: https://img.shields.io/travis/gueststream-inc/iqware/master.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/gueststream-inc/iqware.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/gueststream-inc/iqware.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/gueststream-inc/iqware.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/gueststream/iqware.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/gueststream/iqware
 [link-travis]: https://travis-ci.org/gueststream-inc/iqware
