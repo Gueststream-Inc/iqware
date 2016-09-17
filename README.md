@@ -22,8 +22,9 @@ $ composer require gueststream/iqware
 ## Usage
 
 ``` php
-$iqwareClient = new \Gueststream\PMS\IQWare\Client('https://www.my-iqware-server/IQWareWebRes.asmx?WSDL');
-$properties = $iqwareClient->getProperties();
+$iqwareClient = new \Gueststream\PMS\IQWare\IQWareWebRes('https://www.my-iqware-server/IQWareWebRes.asmx?WSDL');
+$getAllRoomsSpecificationsRequest = new API\GetAllRoomsSpecifications(1, 'EN');
+$getAllRoomsSpecificationsResponse = $client->getAllRoomsSpecifications($getAllRoomsSpecificationsRequest);
 ```
 
 ## Testing
