@@ -580,10 +580,10 @@ class IQWareWebRes extends \SoapClient
         'Language'                                                => 'Gueststream\\PMS\\IQWare\\API\\Language',
         'ArrayOfSuiteItems'                                       => 'Gueststream\\PMS\\IQWare\\API\\ArrayOfSuiteItems',
         'SuiteItems'                                              => 'Gueststream\\PMS\\IQWare\\API\\SuiteItems',
-        'getRoomSpecifications'                                   => 'Gueststream\\PMS\\IQWare\\API\\getRoomSpecifications',
-        'getRoomSpecificationsResponse'                           => 'Gueststream\\PMS\\IQWare\\API\\getRoomSpecificationsResponse',
-        'getAllRoomsSpecifications'                               => 'Gueststream\\PMS\\IQWare\\API\\getAllRoomsSpecifications',
-        'getAllRoomsSpecificationsResponse'                       => 'Gueststream\\PMS\\IQWare\\API\\getAllRoomsSpecificationsResponse',
+        'getRoomSpecifications'                                   => 'Gueststream\\PMS\\IQWare\\API\\GetRoomSpecifications',
+        'getRoomSpecificationsResponse'                           => 'Gueststream\\PMS\\IQWare\\API\\GetRoomSpecificationsResponse',
+        'getAllRoomsSpecifications'                               => 'Gueststream\\PMS\\IQWare\\API\\GetAllRoomsSpecifications',
+        'getAllRoomsSpecificationsResponse'                       => 'Gueststream\\PMS\\IQWare\\API\\GetAllRoomsSpecificationsResponse',
         'getAllSuitesSpecifications'                              => 'Gueststream\\PMS\\IQWare\\API\\getAllSuitesSpecifications',
         'getAllSuitesSpecificationsResponse'                      => 'Gueststream\\PMS\\IQWare\\API\\getAllSuitesSpecificationsResponse',
         'getUnitAvailabilityForCalendar'                          => 'Gueststream\\PMS\\IQWare\\API\\getUnitAvailabilityForCalendar',
@@ -2599,11 +2599,11 @@ class IQWareWebRes extends \SoapClient
     /**
      * Return a list of rooms and suite
      *
-     * @param getAllRoomsSpecifications $parameters
+     * @param GetAllRoomsSpecifications $parameters
      *
-     * @return getAllRoomsSpecificationsResponse
+     * @return GetAllRoomsSpecificationsResponse
      */
-    public function getAllRoomsSpecifications(getAllRoomsSpecifications $parameters)
+    public function getAllRoomsSpecifications(GetAllRoomsSpecifications $parameters)
     {
         return $this->__soapCall('getAllRoomsSpecifications', [ $parameters ]);
     }

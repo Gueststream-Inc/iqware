@@ -2,7 +2,7 @@
 
 namespace Gueststream\PMS\IQWare\API;
 
-class getAllRoomsSpecificationsResponse
+class GetAllRoomsSpecificationsResponse
 {
 
     /**
@@ -28,7 +28,8 @@ class getAllRoomsSpecificationsResponse
 
     /**
      * @param ArrayOfRoomSpecification $getAllRoomsSpecificationsResult
-     * @return \Gueststream\PMS\IQWare\API\getAllRoomsSpecificationsResponse
+     *
+*@return \Gueststream\PMS\IQWare\API\GetAllRoomsSpecificationsResponse
      */
     public function setGetAllRoomsSpecificationsResult($getAllRoomsSpecificationsResult)
     {

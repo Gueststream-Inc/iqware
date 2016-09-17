@@ -2,7 +2,7 @@
 
 namespace Gueststream\PMS\IQWare\API;
 
-class getAllRoomsSpecifications
+class GetAllRoomsSpecifications
 {
 
     /**
@@ -35,7 +35,8 @@ class getAllRoomsSpecifications
 
     /**
      * @param int $guid
-     * @return \Gueststream\PMS\IQWare\API\getAllRoomsSpecifications
+     *
+*@return \Gueststream\PMS\IQWare\API\GetAllRoomsSpecifications
      */
     public function setGuid($guid)
     {
@@ -53,7 +54,8 @@ class getAllRoomsSpecifications
 
     /**
      * @param string $strISOLanguageCode
-     * @return \Gueststream\PMS\IQWare\API\getAllRoomsSpecifications
+     *
+*@return \Gueststream\PMS\IQWare\API\GetAllRoomsSpecifications
      */
     public function setStrISOLanguageCode($strISOLanguageCode)
     {
