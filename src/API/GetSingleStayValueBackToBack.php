@@ -178,8 +178,8 @@ class GetSingleStayValueBackToBack
         $this->ID_PromoCode = $ID_PromoCode;
         $this->intGuestCount = $intGuestCount;
         $this->strChildren = $strChildren;
-        $this->dArrDate = $dArrDate->format(\DateTime::ATOM);
-        $this->dDepDate = $dDepDate->format(\DateTime::ATOM);
+        $this->dArrDate = $dArrDate->format('Y-m-d');
+        $this->dDepDate = $dDepDate->format('Y-m-d');
         $this->strAttributes = $strAttributes;
         $this->strLocations = $strLocations;
         $this->dstElements = $dstElements;
@@ -348,7 +348,7 @@ class GetSingleStayValueBackToBack
      */
     public function setDArrDate(\DateTime $dArrDate)
     {
-        $this->dArrDate = $dArrDate->format(\DateTime::ATOM);
+        $this->dArrDate = $dArrDate->format('Y-m-d');
         return $this;
     }
 
@@ -374,7 +374,7 @@ class GetSingleStayValueBackToBack
      */
     public function setDDepDate(\DateTime $dDepDate)
     {
-        $this->dDepDate = $dDepDate->format(\DateTime::ATOM);
+        $this->dDepDate = $dDepDate->format('Y-m-d');
         return $this;
     }
 

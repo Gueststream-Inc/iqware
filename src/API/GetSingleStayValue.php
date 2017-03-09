@@ -118,8 +118,8 @@ class GetSingleStayValue
         $this->strRateSpecial = $strRateSpecial;
         $this->intGuestCount = $intGuestCount;
         $this->strChildren = $strChildren;
-        $this->dArrDate = $dArrDate->format(\DateTime::ATOM);
-        $this->dDepDate = $dDepDate->format(\DateTime::ATOM);
+        $this->dArrDate = $dArrDate->format('Y-m-d');
+        $this->dDepDate = $dDepDate->format('Y-m-d');
         $this->strAttributes = $strAttributes;
         $this->strLocations = $strLocations;
         $this->dstElements = $dstElements;
@@ -278,7 +278,7 @@ class GetSingleStayValue
      */
     public function setDArrDate(\DateTime $dArrDate)
     {
-        $this->dArrDate = $dArrDate->format(\DateTime::ATOM);
+        $this->dArrDate = $dArrDate->format('Y-m-d');
         return $this;
     }
 
@@ -304,7 +304,7 @@ class GetSingleStayValue
      */
     public function setDDepDate(\DateTime $dDepDate)
     {
-        $this->dDepDate = $dDepDate->format(\DateTime::ATOM);
+        $this->dDepDate = $dDepDate->format('Y-m-d');
         return $this;
     }
 
